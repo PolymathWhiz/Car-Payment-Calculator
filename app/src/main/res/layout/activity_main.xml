@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+tools:context="co.maplerad.carloan.MainActivity"
+android:paddingLeft="50dp"
+android:paddingRight="50dp"
+android:paddingTop="20dp">
+
+<EditText
+    android:id="@+id/carPriceId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Car Price"
+    android:inputType="numberDecimal"
+    android:layout_marginBottom="15dp"
+    android:gravity="center"/>
+
+<EditText
+    android:id="@+id/downPaymentId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    android:hint="Down Payment"
+    android:layout_marginBottom="15dp"
+    android:gravity="center"/>
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest Rate:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/interestRateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</GridLayout>
+
+<SeekBar
+    android:id="@+id/seekBarId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:max="100"
+    android:progress="10"
+    android:thumbTint="@color/colorPrimary" />
+
+<Button
+    android:id="@+id/buttonId"
+    style="@style/Widget.AppCompat.Button.Small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorPrimary"
+    android:text="Monthly Payments"
+    android:textAlignment="center"
+    android:textColor="@android:color/white"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/headingResult"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="Your Monthly Installments:"
+    android:textAllCaps="true"
+    android:textStyle="bold"
+    android:visibility="gone"
+    android:textColor="@color/black"/>
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:id="@+id/results"
+    android:visibility="gone"
+    android:layout_marginTop="20dp"
+    >
+
+    <TextView
+        android:id="@+id/twentyFourTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 Months:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/twentyFourResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/thirtySixTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="36 Months:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/thirtySixResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fortyEightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="48 Months:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/fortyEightResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sixtyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60 Months:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/sixtyResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</GridLayout>
+
+</LinearLayout>
